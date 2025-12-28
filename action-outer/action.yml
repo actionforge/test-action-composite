@@ -1,0 +1,12 @@
+name: "Outer Hello"
+description: "Prints a message and calls the inner action"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Print Outer Hello
+      shell: bash
+      run: echo "🌍 Hello World from the OUTER action..."
+
+    - name: Call Inner Action
+      uses: actionforge/test-action-composite/action-inner@main

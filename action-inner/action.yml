@@ -1,0 +1,9 @@
+name: "Inner Hello"
+description: "The final destination action"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Print Inner Hello
+      shell: bash
+      run: echo "👋 Hello World from the INNER action!"
